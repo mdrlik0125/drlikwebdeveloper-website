@@ -1,4 +1,5 @@
 /****** BASE STYLES ********/
+
 body{
 	font-family: 'Source Sans Pro', sans serif;
 	color: #2b2b2b;
@@ -8,7 +9,10 @@ body{
 	height: 600px;
 }
 
+
+
 /****** GRID ******/
+
 .full-width{
 	width: 1100px;
 	margin: 0 auto;
@@ -24,7 +28,10 @@ body{
 	float: left;
 }
 
+
+
 /****** Header Section ******/
+
 header{
 	background: no-repeat url("../image/hero-700.png");
 	background-size: cover;
@@ -33,7 +40,7 @@ header{
 
 header h1{
 	padding: 20px 0;
-	font-family: "Lora";
+	font-family: "Lora", serif;
 	font-size: 25px;
 	color: #BBC085;
 }
@@ -41,14 +48,11 @@ header h1{
 header h2{
 	width: 900px;
 	clear: both;
-	font-family: "Lora";
+	font-family: "Lora", serif;
 	font-size: 65px;
 	line-height: 80px;
 	color: black;
 	padding: 20px 0 20px 25px;
-}
-header h2 span{
-	color: #BDBDBD;
 }
 
 nav{
@@ -72,7 +76,10 @@ nav ul li a{
 	padding-left: 50px;
 }
 
+
+
 /****** Work1 Section ******/
+
 #work1 .full-width{
 	padding: 60px 0;
 }
@@ -91,7 +98,10 @@ nav ul li a{
 	padding-right: 20px;
 }
 
+
+
 /****** Work2 Section ******/
+
 #work2{
 	background: #F9CEB7;
 	text-align: center;
@@ -113,13 +123,16 @@ nav ul li a{
 }
 
 #work2 p{
-	font-family: "Lora";
+	font-family: "Lora", serif;
 	font-size: 18px;
 	line-height: 30px;
 	padding: 0 20px;
 }
 
+
+
 /****** About Section ******/
+
 #about .full-width{
 	padding: 60px 0;
 }
@@ -138,7 +151,10 @@ nav ul li a{
 	padding-right: 20px;
 }
 
+
+
 /****** Contact Section (in footer) ******/
+
 #contact{
 	background: #E1F5A9;
 }
@@ -162,7 +178,7 @@ nav ul li a{
 }
 
 #contact h2{
-	font-family: "Lora";
+	font-family: "Lora", serif;
 	font-size: 36px;
 	line-height: 44px;
 }
@@ -203,24 +219,39 @@ nav ul li a{
 	padding-right: 48px;
 }
 
-/****** PORTFOLIO Page ******/
 
-#portfolio img{
-	background: no-repeat url("../image/hero-700.png");
-	background-size: cover;
-	height: 300px;
-}
+
+/****** PORTFOLIO PAGE ******/
 
 #portfolio .full-width{
-	padding: 0px 0;
+  height: 1450px;
 }
 
 #portfolio .half-width{
-	padding: 0px 0:
+  height: 350px;
+  padding-top: 55px;
 }
 
-#portfolio h1{
-	font-family: "Lora", serif;
-	font-size: 24px;
-	padding-left: 50px;
+#portfolio h2{
+  margin: 0;
+  font-family: 'Lora', serif;
+  font-size: 38px;
+  font-weight: bold;
+  padding: 50px 0 60px 0;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+#portfolio h3{
+  margin: 0;
+	font-size: 27px;
+  font-weight: bold;
+	padding: 0 0 15px 50px;
+  text-transform: capitalize;
+}
+
+#portfolio p{
+  margin: 0;
+	font-size: 21px;
+	padding: 0 0 15px 50px;
 }
