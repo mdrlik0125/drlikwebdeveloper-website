@@ -1,12 +1,22 @@
 /****** BASE STYLES ********/
+/*** change the fixed-width design into a fluid design.  Full-width of the webiste is 1100px. ***/
 
 body{
-	font-family: 'Source Sans Pro', sans serif;
+	font-family: "Source Sans Pro", sans serif;
 	color: #2b2b2b;
+	font-size: 21px;
 }
 
-#work1, #work2, #about, #contact {
+/* height of website calculated at 2284.68px */
+
+#work1, #about, #contact {
+	/*** Full-width = 1100px, height = 600px ***/
+	/* height: 54.54545454%; */
 	height: 600px;
+}
+
+#work2 {
+	height: 500px;
 }
 
 
@@ -14,17 +24,20 @@ body{
 /****** GRID ******/
 
 .full-width{
+	/*** change the fixed-width design into a fluid design.  Full-width of the website is 1100px. ***/
 	width: 1100px;
 	margin: 0 auto;
 }
 
 .half-width{
-	width: 550px;
+	/*** Half-width of the website is 550px. ***/
+	width: 50%;
 	float: left;
 }
 
 .third-width{
-	width: 366px;
+	/*** Third-width of the website is 366px. ***/
+	width: 33.333333%;
 	float: left;
 }
 
@@ -34,30 +47,38 @@ body{
 
 header{
 	background: no-repeat url("../image/hero-700.png");
+	/* background-size: 100% auto; */
 	background-size: cover;
-	height: 700px;
+	/*** Full-width = 1100px, height = 700px; ***/
+  height: 700px;
 }
 
 header h1{
-	padding: 20px 0;
+  color: #BBC085;
 	font-family: "Lora", serif;
-	font-size: 25px;
-	color: #BBC085;
+	font-size: 1.195em; /* 25 divided by 21 */
+	/*** h1 occupies element that is 550px (half-width) padding = 20px ***/
+	padding: 3.6363636% 0;  /* 20 divided by 550 */
 }
 
 header h2{
-	width: 900px;
+	/*** h2 occupies element that is 1100px (full-width) ***/
 	clear: both;
-	font-family: "Lora", serif;
-	font-size: 65px;
-	line-height: 80px;
 	color: black;
-	padding: 20px 0 20px 25px;
+	font-family: "Lora", serif;
+	font-size: 3.095em; /* 65 divided by 21 */
+	line-height: 1.230em; /* 80 divided by 65 - must be realtive to font-size */
+	padding: 1.8181818% 0 1.8181818% 2.27272727%; /* padding: 20px 0 20px 25px */
+	width: 81.81818181%; /* 900 divided by 1100 */
 }
 
 nav{
+	/*** nav elements occupy a half-width element (550px) ***/
 	float: right;
+	/*** padding: 50px 20px ***/
+	/* padding: 9.09090909% 3.63636363%; /* 50 divided by 550 and 20 divided by 550 */
 	padding: 50px 20px;
+	/* text-align: left; */
 }
 
 nav ul {
@@ -69,11 +90,13 @@ nav li{
 }
 
 nav ul li a{
-	text-transform: uppercase;
-	text-decoration: underline;
-	font-size: 18px;
+	/*** each list item occupies element that is half-width (550px) ***/
 	color: #828282;
-	padding-left: 50px;
+	font-size: 0.857em; /* 18 divided by 21 */
+	/* padding-left: 9.09090909%; /* padding-left: 50px, */
+	padding-left: 20px;
+	text-decoration: underline;
+	text-transform: uppercase;
 }
 
 
@@ -81,21 +104,25 @@ nav ul li a{
 /****** Work1 Section ******/
 
 #work1 .full-width{
-	padding: 60px 0;
+	/*** padding: 60px 0px, work height = 600px, full-width = 1100px***/
+	padding: 8.571429% 0;
 }
 
 #work1 h2{
 	font-family: "Lora", serif;
-	font-size: 36px;
-	padding-left: 50px;
+	font-size: 1.714em; /* 36 divided by 21 */
+	/*** padding-left: 50px, work height = 600px, full-width = 1100px***/
+	padding-left: 8.33333333%;
 }
 
 #work1 p{
-	font-size: 21px;
+	font-size: 1em;
 	color: #7F7F7F;
-	line-height: 40px;
-	padding-left: 50px;
-	padding-right: 20px;
+	line-height: 1.904em; /* 40 divided by 21 */
+	/*** padding-left: 50px, work height = 600px, full-width = 1100px***/
+	padding-left: 8.33333333%;
+	/*** padding-right: 20px work height = 600px, full-width = 1100px***/
+	padding-right: 3.33333333%;
 }
 
 
@@ -108,24 +135,28 @@ nav ul li a{
 }
 
 #work2 .full-width{
-	padding: 100px 0;
+	/*** padding: 100px 0px, work height = 600px, full-width = 1100px***/
+	padding: 80px 0px;
 }
 
 #work2 img{
+	/*** padding-bottom: 30px work height = 600px, full-width = 1100px***/
 	padding-bottom: 30px;
 }
 
 #work2 h3{
-	font-size: 24px;
-	line-height: 32px;
+	font-size: 1.142em; /* 24 divided by 21 */
+	line-height: 1.523em; /* 32 divided by 21 */
+	/*** padding-bottom: 30px work height = 600px, full-width = 1100px***/
 	width: 60%;
 	margin: 0 auto;
 }
 
 #work2 p{
-	font-family: "Lora", serif;
-	font-size: 18px;
-	line-height: 30px;
+	/*** font-family: "Lora", serif; ***/
+	font-size: 21px; /* 18 divided by 21 */
+	line-height: 1.428em; /* 30 divided by 21 */
+	/*** padding: 0 20px, work height = 600px, full-width = 1100px***/
 	padding: 0 20px;
 }
 
@@ -134,12 +165,14 @@ nav ul li a{
 /****** About Section ******/
 
 #about .full-width{
+	/*** padding: 60px 0, about height = 600px, full-width = 1100px***/
 	padding: 60px 0;
 }
 
 #about h2{
 	font-family: "Lora", serif;
 	font-size: 36px;
+	/*** padding-left: 50px, about height = 600px, full-width = 1100px***/
 	padding-left: 50px;
 }
 
@@ -147,7 +180,9 @@ nav ul li a{
 	font-size: 21px;
 	color: #7F7F7F;
 	line-height: 40px;
+	/*** padding-left: 50px, about height = 600px, full-width = 1100px***/
 	padding-left: 50px;
+	/*** padding-right: 20px, about height = 600px, full-width = 1100px***/
 	padding-right: 20px;
 }
 
@@ -160,20 +195,24 @@ nav ul li a{
 }
 
 #contact .full-width{
+	/*** padding: 50px 0, contact height = 600px, full-width = 1100px***/
 	padding: 50px 0;
 }
 
 #contact img#contact-img{
+	/*** padding: 50px 0, contact height = 600px, full-width = 1100px***/
 	margin: 20px;
 	border: 12px solid #FFFFFF;
 }
 
 #contact h2, #contact #email-header, #contact #socialmedia-header, #contact ul
 {
+	/*** padding: 50px 0, contact height = 600px, full-width = 1100px***/
 	padding-left: 100px;
 }
 
 #contact #envelope{
+	/*** padding: 50px 0, contact height = 600px, full-width = 1100px***/
 	padding: 0 10px 0 115px;
 }
 
@@ -187,6 +226,7 @@ nav ul li a{
 	font-size: 32px;
 	font-weight: 100;
 	line-height: 44px;
+	/*** padding: 50px 0, contact height = 600px, full-width = 1100px***/
 	margin: -30px 0 5px 0;
 }
 
@@ -194,6 +234,7 @@ nav ul li a{
 	font-size: 29px;
 	font-weight: bold;
 	line-height: 44px;
+	/*** padding: 50px 0, contact height = 600px, full-width = 1100px***/
 	margin: 40px 0 0 0;
 }
 
@@ -211,11 +252,13 @@ nav ul li a{
 #contact ul li{
 	display: inline-block;
 	position: relative;
+	/*** padding: 50px 0, contact height = 600px, full-width = 1100px***/
 	left: 130px;
 }
 
 #contact ul img{
 	font-size: 32px;
+	/*** padding: 50px 0, contact height = 600px, full-width = 1100px***/
 	padding-right: 48px;
 }
 
@@ -254,4 +297,16 @@ nav ul li a{
   margin: 0;
 	font-size: 21px;
 	padding: 0 0 15px 50px;
+}
+
+#portfolio ul{
+	margin: 0;
+	font-size: 21px;
+	padding: 0 0 10px 70px;
+}
+
+#portfolio ul li{
+	margin: 0;
+	font-size: 19px;
+	padding: 0 0 7px 10px;
 }
